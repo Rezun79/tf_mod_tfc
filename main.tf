@@ -1,6 +1,6 @@
 resource "tfe_workspace" "tfc_workspace" {
   name         = local.rg_name
-  organization = var.tfc_organization_name
+  organization = local.tfc_organization_name
   vcs_repo {
     identifier = "${local.github_organization}/${local.rg_name}"
     oauth_token_id = local.tfc_github_oauth_token_id
