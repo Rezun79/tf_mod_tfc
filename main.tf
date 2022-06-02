@@ -16,3 +16,12 @@ resource "tfe_variable" "client_secret" {
   workspace_id = tfe_workspace.tfc_workspace.id
   description  = "SPN Secret"
 }
+
+resource "tfe_variable" "client_id" {
+  key          = "client_id"
+  value        = local.client_id
+  category     = "terraform"
+  sensitive    = true
+  workspace_id = tfe_workspace.tfc_workspace.id
+  description  = "SPN Client ID"
+}
