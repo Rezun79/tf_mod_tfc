@@ -21,7 +21,7 @@ resource "tfe_variable" "client_id" {
   key          = "client_id"
   value        = local.client_id
   category     = "terraform"
-  sensitive    = true
+  sensitive    = false
   workspace_id = tfe_workspace.tfc_workspace.id
   description  = "SPN Client ID"
 }
