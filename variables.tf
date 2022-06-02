@@ -19,7 +19,7 @@ variable "tfc_github_oauth_token_id" {
 variable "secret" {
 }
 
-variable "client_id" {
+variable "spn_client_id" {
 }
 
 variable "rg_name" {
