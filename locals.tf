@@ -4,4 +4,5 @@ locals {
   github_organization = var.github_organization
   tfc_github_oauth_token_id = var.tfc_github_oauth_token_id
   secret = var.secret
+  spn_client_id = var.spn_client_id
 }
